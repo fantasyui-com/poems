@@ -4,7 +4,8 @@
   "description": "Poem Typography Framework.",
   "main": "index.js",
   "scripts": {
-    "build": "node cli.js samples/*"
+    "build": "node cli.js samples/*",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "bin": {
     "poems": "node cli.js"
@@ -14,7 +15,7 @@
     "url": "git+https://github.com/fantasyui-com/poems.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/poems/issues"
